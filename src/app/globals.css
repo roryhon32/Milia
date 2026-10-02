@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #0C0D0F;
+    --bg-surface: #141518;
+    --bg-surface-elevated: #1B1C21;
+    --bg-light: #F7F7F4;
+    --bg-light-subtle: #EDEDE8;
+    --text-primary: #F4F4F1;
+    --text-secondary: #9B9DA6;
+    --text-muted: #646670;
+    --text-dark: #0D0E10;
+    --text-dark-secondary: #484A54;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --border-light: rgba(18, 19, 22, 0.1);
+    --accent: #E5E7EB;
+  }
+
+  * {
+    box-sizing: border-box;
+    border-color: var(--border-subtle);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #0C0D0F;
+    color: #F4F4F1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  ::selection {
+    background-color: #F4F4F1;
+    color: #0C0D0F;
+  }
+
+  :where(a, button, input, select, textarea):focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+}
+
+/* Custom editorial typography utility classes */
+.font-heading {
+  font-family: var(--font-space), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Custom subtle grain overlay for high-end tactile feel */
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+.bg-grid-pattern-light {
+  background-image: 
+    linear-gradient(to right, rgba(18, 19, 22, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 19, 22, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Hide scrollbar for clean UI elements while keeping scrollable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom cursor hide on body when custom cursor is active on desktop */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .cursor-enhanced,
+  .cursor-enhanced a,
+  .cursor-enhanced button {
+    cursor: none !important;
+  }
+}
+
+/* Accessibility: prefers-reduced-motion reset */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
