@@ -1,4 +1,5 @@
-const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/\D/g, "") || "";
+const rawNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/\D/g, "") || "5573982358031";
+const whatsappNumber = rawNumber.length === 11 || rawNumber.length === 10 ? `55${rawNumber}` : rawNumber;
 const contactEmail = "contato@miliaco.com";
 
 export const defaultContactMessage = "Olá! Vim pelo site da Milia Co. e gostaria de conversar sobre um projeto.";
