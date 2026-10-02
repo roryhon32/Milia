@@ -10,7 +10,7 @@ export const audienceSegments: AudienceSegment[] = [
   {
     id: "arquitetura",
     title: "Arquitetura & Interiores",
-    tagline: "Ateliês de arquitetura, designers de interiores e construtoras boutique.",
+    tagline: "Ateliês de arquitetura, designers de interiores e construtoras de alto padrão.",
     context: "Tratamos cada projeto com respeito à proporção e luz, valorizando volumetria, materiais e o portfólio autoral como obras de arte.",
   },
   {

@@ -114,7 +114,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {project.deliverables.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 p-3 bg-white/[0.02] border border-white/[0.06]">
-                  <Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <Check className="w-4 h-4 text-neutral-200 flex-shrink-0 mt-0.5" />
                   <span className="text-xs text-neutral-300">{item}</span>
                 </div>
               ))}

@@ -68,7 +68,7 @@ export function CtaSection() {
           {/* Main Headline & WhatsApp Direct */}
           <div className="lg:col-span-7 space-y-8">
             <div className="cta-element inline-flex items-center gap-2.5 py-1 px-3 border border-white/10 text-neutral-400 text-xs font-mono-tech uppercase">
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
+              <span className="w-2 h-2 rounded-full bg-white" />
               <span>CONVERSE COM O ESTÚDIO</span>
             </div>
 

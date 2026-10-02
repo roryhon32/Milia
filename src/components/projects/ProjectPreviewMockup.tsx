@@ -148,7 +148,7 @@ export function ProjectPreviewMockup({ project }: MockupProps) {
           <div className="grid grid-cols-3 gap-3 p-4 bg-white/[0.03] border border-white/10">
             <div>
               <p className="text-[10px] font-mono-tech text-neutral-400 uppercase">Economia Prevista</p>
-              <p className="text-lg sm:text-xl font-heading font-medium text-emerald-400 mt-0.5">Até 95%</p>
+              <p className="text-lg sm:text-xl font-heading font-medium text-white mt-0.5">Até 95%</p>
             </div>
             <div>
               <p className="text-[10px] font-mono-tech text-neutral-400 uppercase">Payback Médio</p>

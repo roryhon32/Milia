@@ -127,11 +127,11 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto w-full pt-4">
         <div className="hero-badge inline-flex items-center gap-3 py-1.5 px-3 border border-white/10 bg-white/[0.02]">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-60" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-white" />
           </span>
           <span className="text-[11px] font-mono-tech tracking-wider uppercase text-neutral-300">
-            Estúdio Digital Boutique • Projetos Selecionados
+            Estúdio Digital Independente • Projetos Selecionados
           </span>
         </div>
       </div>
