@@ -33,6 +33,7 @@ export function Navbar() {
     document.body.style.overflow = "hidden";
     firstMenuLinkRef.current?.focus();
     const onKeyDown = (event: KeyboardEvent) => {
+      if (document.querySelector("#contact-brief[open]")) return;
       if (event.key === "Escape") { setMobileMenuOpen(false); return; }
       if (event.key !== "Tab" || !menuRef.current) return;
       const links = Array.from(menuRef.current.querySelectorAll<HTMLAnchorElement>("a[href]"));
@@ -183,3 +184,4 @@ export function Navbar() {
     </>
   );
 }
+

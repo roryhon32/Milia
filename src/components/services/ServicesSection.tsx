@@ -35,20 +35,20 @@ export function ServicesSection() {
     <section
       id="servicos"
       ref={containerRef}
-      className="relative py-24 lg:py-36 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
+      className="relative py-14 lg:py-20 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header Meta */}
-        <div className="flex items-center justify-between pb-8 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
-          <span>03 / 07 — CAPACIDADES & SERVIÇOS</span>
+        <div className="flex items-center justify-between pb-5 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
+          <span>O QUE SUA EMPRESA PRECISA</span>
           <span>EXECUÇÃO DE ALTA PRECISÃO</span>
         </div>
 
         {/* Section Headline */}
-        <div className="py-12 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+        <div className="py-5 sm:py-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-8">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-light tracking-[-0.03em] text-white leading-tight">
-              Soluções digitais desenhadas sob medida para o seu momento de mercado.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-light tracking-[-0.03em] text-white leading-tight">
+              Um site que apresenta, convence e facilita o contato.
             </h2>
           </div>
           <div className="lg:col-span-4 lg:text-right">
@@ -76,14 +76,14 @@ export function ServicesSection() {
                   type="button"
                   onClick={() => setActiveServiceId(isOpen ? "" : service.id)}
                   aria-expanded={isOpen}
-                  className="w-full text-left py-8 sm:py-10 flex items-center justify-between gap-6 group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
+                  className="w-full text-left py-5 sm:py-6 flex items-center justify-between gap-6 group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
                 >
                   <div className="flex items-baseline gap-6 sm:gap-12 flex-1">
                     <span className="text-xs sm:text-sm font-mono-tech text-neutral-400 group-hover:text-white transition-colors">
                       {service.number}
                     </span>
                     <div className="space-y-1">
-                      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-light tracking-tight text-white group-hover:translate-x-1 transition-transform duration-300">
+                      <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-light tracking-tight text-white group-hover:translate-x-1 transition-transform duration-300">
                         {service.title}
                       </h3>
                       <p className="text-xs sm:text-sm text-neutral-400 font-normal">

@@ -92,14 +92,7 @@
   scrollbar-width: none;
 }
 
-/* Custom cursor hide on body when custom cursor is active on desktop */
-@media (min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .cursor-enhanced,
-  .cursor-enhanced a,
-  .cursor-enhanced button {
-    cursor: none !important;
-  }
-}
+/* Keep the system cursor visible, including dialogs in the top layer. */
 
 /* Accessibility: prefers-reduced-motion reset */
 @media (prefers-reduced-motion: reduce) {
@@ -112,4 +105,17 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+
+/* Native image cursors also remain visible above modal dialogs. */
+@media (hover: hover) and (pointer: fine) {
+  body, dialog, dialog::backdrop {
+    cursor: url('/cursors/editorial.svg') 16 16, auto;
+  }
+  a, button, select, summary, [role='button'] {
+    cursor: url('/cursors/editorial-link.svg') 16 16, pointer;
+  }
+  input, textarea, [contenteditable='true'] { cursor: text; }
+  button:disabled, input:disabled, select:disabled { cursor: not-allowed; }
 }

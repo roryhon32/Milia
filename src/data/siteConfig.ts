@@ -29,7 +29,7 @@ export const siteConfig = {
     { label: "Projetos", href: "#projetos" },
     { label: "Serviços", href: "#servicos" },
     { label: "Processo", href: "#processo" },
-    { label: "Sobre", href: "#sobre" },
+
     { label: "Planos", href: "#planos" },
     { label: "Contato", href: "#contato" },
   ],

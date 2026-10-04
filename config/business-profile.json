@@ -1,0 +1,250 @@
+{
+  "name": "Milia Co.",
+  "description": "Estúdio digital de sites institucionais, landing pages e integrações.",
+  "valueProposition": "Presença digital profissional e contato comercial simples.",
+  "services": [
+    {
+      "id": "sites",
+      "number": "01",
+      "title": "Sites & Experiências Digitais",
+      "tagline": "Landing pages, sites institucionais e presença digital com acabamento cirúrgico.",
+      "description": "Construímos sites que traduzem a credibilidade da sua empresa em uma presença profissional. Layouts com tipografia precisa, carregamento otimizado e arquitetura pensada para facilitar o contato comercial.",
+      "items": [
+        "Landing pages focadas em alta taxa de conversão",
+        "Sites institucionais com direção de arte editorial",
+        "Experiências interativas com motion design GSAP",
+        "Design responsivo absoluto para mobile e desktop"
+      ],
+      "deliverable": "Interface proprietária, código limpo em Next.js e design responsivo.",
+      "impact": "Primeira impressão memorável e autoridade imediata no primeiro contato."
+    },
+    {
+      "id": "seo-performance",
+      "number": "02",
+      "title": "SEO Técnico & Performance",
+      "tagline": "Arquitetura técnica otimizada para motores de busca, velocidade extrema e retenção.",
+      "description": "A estética só atinge seu potencial se o cliente conseguir encontrar sua empresa. Organizamos conteúdo, estrutura semântica, metadados e desempenho para facilitar a indexação e oferecer uma boa experiência de navegação.",
+      "items": [
+        "Otimização de Core Web Vitals (LCP, INP, CLS)",
+        "Estruturação de dados rica com Schema.org (JSON-LD)",
+        "Carregamento progressivo de recursos e compressão avançada",
+        "Auditoria contínua de rastreabilidade e sitemap dinâmico"
+      ],
+      "deliverable": "Base técnica de SEO e desempenho preparada para cada projeto.",
+      "impact": "Visitas qualificadas sem depender exclusivamente de anúncios pagos."
+    },
+    {
+      "id": "integracoes",
+      "number": "03",
+      "title": "Integrações Estratégicas",
+      "tagline": "WhatsApp, formulários inteligentes, Analytics, mapas e ecossistema de dados.",
+      "description": "Conectamos o seu site diretamente às ferramentas que sustentam sua operação diária. Cada clique no WhatsApp, preenchimento de formulário ou agendamento é rastreado com precisão milimétrica para nutrição de campanhas e CRM.",
+      "items": [
+        "Gatilhos direcionados para atendimento via WhatsApp Business",
+        "Formulários inteligentes com validação instantânea e webhook",
+        "Google Analytics 4, Tag Manager e Meta Pixel configurados",
+        "Integração com CRMs (RD Station, HubSpot, Pipefy, Active)"
+      ],
+      "deliverable": "Fluxo unificado entre o site e a sua equipe comercial.",
+      "impact": "Eliminação de atrito: seu cliente clica e inicia uma conversa qualificada."
+    },
+    {
+      "id": "automacao",
+      "number": "04",
+      "title": "Automação Comercial",
+      "tagline": "Fluxos de captura, qualificação e encaminhamento automático de oportunidades.",
+      "description": "Menos trabalho manual repetitivo, mais velocidade de resposta. Desenhamos fluxos automatizados que recebem o lead, organizam os dados no seu painel e notificam sua equipe em segundos, garantindo contato no momento mais quente.",
+      "items": [
+        "Roteamento de leads por região, especialidade ou valor",
+        "Disparo automático de confirmações e mensagens no WhatsApp",
+        "Sincronização em tempo real com planilhas e bancos de dados",
+        "Alertas imediatos para equipe de vendas via Telegram/Slack/Email"
+      ],
+      "deliverable": "Automações rodando 24/7 sem necessidade de intervenção humana.",
+      "impact": "Tempo de resposta reduzido de horas para minutos no atendimento."
+    },
+    {
+      "id": "sistemas",
+      "number": "05",
+      "title": "Sistemas & Soluções Sob Medida",
+      "tagline": "CRMs leves, portais de clientes, painéis internos e ferramentas proprietárias.",
+      "description": "Quando planilhas ficam limitadas e plataformas prontas são engessadas demais, criamos sistemas sob medida. Interfaces rápidas, intuitivas e desenhadas estritamente em torno da realidade da sua empresa.",
+      "items": [
+        "Painéis administrativos e dashboards objetivos",
+        "Áreas restritas para clientes, membros ou parceiros",
+        "Controle de status de pedidos, projetos e atendimentos",
+        "Arquitetura escalável com banco de dados em nuvem e segurança"
+      ],
+      "deliverable": "Aplicação web sob medida com controle total dos seus dados.",
+      "impact": "Eficiência operacional e ferramenta que cresce junto com sua empresa."
+    }
+  ],
+  "audience": [
+    {
+      "id": "clinicas",
+      "title": "Clínicas & Consultórios",
+      "tagline": "Odontologia, medicina especializada, dermatologia e centros de diagnóstico.",
+      "context": "Transmitimos tranquilidade, biossegurança e acolhimento através de interfaces limpas que transformam visitantes em consultas particulares agendadas."
+    },
+    {
+      "id": "arquitetura",
+      "title": "Arquitetura & Interiores",
+      "tagline": "Ateliês de arquitetura, designers de interiores e construtoras de alto padrão.",
+      "context": "Tratamos cada projeto com respeito à proporção e luz, valorizando volumetria, materiais e o portfólio autoral como obras de arte."
+    },
+    {
+      "id": "engenharia",
+      "title": "Engenharia & Perícias",
+      "tagline": "Perícias judiciais, laudos estruturais, engenharia civil e infraestrutura.",
+      "context": "Eliminamos a impressão de burocracia e posicionamos sua empresa como referência técnica inquestionável para grandes clientes corporativos."
+    },
+    {
+      "id": "solar",
+      "title": "Energia Solar & Indústria",
+      "tagline": "Instaladores fotovoltaicos, integradores de sistemas e transição energética.",
+      "context": "Substituímos discursos vagos por simuladores de economia tangíveis e transparência em retorno de investimento para condomínios e indústrias."
+    },
+    {
+      "id": "contabilidade",
+      "title": "Contabilidade & Finanças",
+      "tagline": "BPOs financeiros, assessorias tributárias e auditorias empresariais.",
+      "context": "Apresentamos segurança, conformidade e precisão numérica em interfaces claras, facilitando o contato com tomadores de decisão."
+    },
+    {
+      "id": "estetica",
+      "title": "Estética & Bem-Estar",
+      "tagline": "Harmonização, clínicas de estética avançada e spas urbanos.",
+      "context": "Estética sutil e sofisticada, sem exageros promocionais, transmitindo segurança e exclusividade em cada detalhe visual."
+    },
+    {
+      "id": "servicos-profissionais",
+      "title": "Serviços Profissionais",
+      "tagline": "Consultorias de gestão, advocacia especializada e headhunting.",
+      "context": "Autoridade imediata para serviços de alto tíquete que exigem validação prévia antes de qualquer reunião ou proposta."
+    },
+    {
+      "id": "negocios-locais",
+      "title": "Negócios Locais",
+      "tagline": "Empresas consolidadas que desejam dominar sua praça geográfica.",
+      "context": "Presença digital clara no celular e estrutura para busca local, ajudando pessoas da região a conhecer sua empresa e entrar em contato."
+    }
+  ],
+  "regions": ["Brasil", "Projetos internacionais conforme escopo"],
+  "differentials": [
+    "Design responsivo",
+    "SEO técnico",
+    "Contato por WhatsApp",
+    "Escopo e proposta antes da contratação"
+  ],
+  "plans": [
+    {
+      "id": "essencial",
+      "name": "Essencial",
+      "startingPrice": "R$ 689",
+      "tagline": "Melhor custo-benefício para começar com um site profissional.",
+      "description": "A solução ideal para profissionais liberais, consultórios e empresas que precisam substituir uma página improvisada por uma presença digital elegante, rápida e confiável.",
+      "scope": [
+        "Site profissional para apresentar sua empresa e seus serviços",
+        "Design responsivo para celular e desktop",
+        "Contato pelo WhatsApp",
+        "SEO técnico básico",
+        "Google Maps quando aplicável",
+        "Compra, registro inicial e configuração do domínio incluídos",
+        "Certificado SSL"
+      ],
+      "idealFor": "Profissionais liberais, consultórios e empresas iniciando sua presença digital séria.",
+      "firstYearHosting": "Hospedagem grátis durante o primeiro ano.",
+      "renewalTerms": "Após o primeiro ano: R$ 39/mês para hospedagem e manutenção técnica.",
+      "price": 689
+    },
+    {
+      "id": "profissional",
+      "name": "Profissional",
+      "startingPrice": "R$ 1.920",
+      "tagline": "Mais páginas, SEO e estrutura para empresas em crescimento.",
+      "description": "Uma plataforma institucional completa com refinamento editorial, múltiplos pontos de contato, animações sutis em GSAP e estrutura avançada para atração de clientes orgânicos.",
+      "scope": [
+        "Site institucional completo (até 6 páginas ou seções detalhadas de serviços e cases)",
+        "Direção de arte personalizada e microinterações elegantes em GSAP",
+        "SEO técnico aprofundado com Schema.org estruturado para busca no Google",
+        "Integração analítica completa (Google Analytics 4 + Meta Pixel / Google Ads)",
+        "Formulários inteligentes com validação e confirmação imediata",
+        "Otimização de Core Web Vitals conforme o escopo e a infraestrutura do projeto",
+        "Treinamento rápido para atualização de conteúdos"
+      ],
+      "idealFor": "Empresas consolidadas, escritórios de arquitetura, clínicas e serviços especializados.",
+      "price": 1920
+    }
+  ],
+  "recurringCharges": [
+    {
+      "id": "essencial-hosting-maintenance",
+      "price": 39,
+      "period": "month",
+      "startsAfter": "Primeiro ano",
+      "description": "Hospedagem e manutenção técnica do Essencial"
+    }
+  ],
+  "faq": [
+    {
+      "id": "pagamento",
+      "question": "Preciso pagar tudo antes?",
+      "answer": "As condições de pagamento são combinadas na proposta. Você conhece o valor, o escopo e as etapas antes de decidir."
+    },
+    {
+      "id": "instagram",
+      "question": "Já tenho Instagram. Ainda preciso de site?",
+      "answer": "O Instagram ajuda na descoberta e no relacionamento. Um site próprio organiza seus serviços, reúne informações e cria mais uma forma de sua empresa ser encontrada em pesquisas."
+    },
+    {
+      "id": "dominio",
+      "question": "Preciso comprar domínio?",
+      "answer": "Não precisa cuidar disso. A Milia Co. compra, registra e configura o domínio para você. No plano Essencial, o registro inicial está incluído no preço. Informamos as condições de renovação antes do vencimento."
+    },
+    {
+      "id": "hospedagem",
+      "question": "A hospedagem está incluída?",
+      "answer": "No plano Essencial, a hospedagem é grátis durante o primeiro ano. A configuração, publicação e o certificado SSL fazem parte da entrega."
+    },
+    {
+      "id": "apos-primeiro-ano",
+      "question": "O que acontece depois do primeiro ano?",
+      "answer": "No plano Essencial, hospedagem e manutenção técnica passam a custar R$ 39/mês. Melhorias de conteúdo ou novas funcionalidades podem exigir orçamento separado."
+    },
+    {
+      "id": "alteracoes",
+      "question": "Posso alterar o site depois?",
+      "answer": "Sim. Ajustes previstos no escopo são feitos antes da aprovação. Depois da publicação, podemos combinar atualizações e evoluções conforme sua necessidade."
+    },
+    {
+      "id": "google",
+      "question": "O site aparecerá no Google?",
+      "answer": "Preparamos títulos, estrutura, metadados e sitemap para facilitar a indexação. A posição nas buscas depende também de conteúdo, concorrência, região, autoridade e tempo; não há garantia de primeira posição."
+    },
+    {
+      "id": "tempo",
+      "question": "Quanto tempo leva para ficar pronto?",
+      "answer": "Depende do tamanho do site, do conteúdo disponível e das integrações. O cronograma é definido na proposta antes do início do projeto."
+    },
+    {
+      "id": "regiao",
+      "question": "Vocês atendem empresas de qualquer região?",
+      "answer": "Sim. As conversas, apresentações e aprovações podem acontecer online, com atendimento a empresas de diferentes regiões."
+    }
+  ],
+  "tone": "Português brasileiro; consultivo, breve, claro, sem jargões ou pressão.",
+  "commercialRestrictions": [
+    "Sem garantia de vendas ou ranking",
+    "Sem urgência ou prova social inventada",
+    "Sem desconto sem validação",
+    "Recomendar o menor escopo suficiente",
+    "Projetos complexos exigem avaliação humana; não existe plano premium cadastrado"
+  ],
+  "ctas": ["Solicitar proposta", "Comparar planos", "Conversar pelo WhatsApp"],
+  "visual": {
+    "background": "#0C0D0F",
+    "text": "#F4F4F1",
+    "typography": ["Space Grotesk", "Plus Jakarta Sans", "JetBrains Mono"],
+    "style": "Editorial, monocromático e compacto"
+  }
+}

@@ -35,20 +35,20 @@ export function PricingSection() {
     <section
       id="planos"
       ref={containerRef}
-      className="relative py-24 lg:py-36 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
+      className="relative py-14 lg:py-20 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header Meta */}
-        <div className="flex items-center justify-between pb-8 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
+        <div className="flex items-center justify-between pb-5 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
           <span>INVESTIMENTO & PLANOS</span>
           <span>TRANSPARÊNCIA COMERCIAL</span>
         </div>
 
         {/* Section Headline */}
-        <div className="py-12 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+        <div className="py-8 sm:py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-8">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-light tracking-[-0.03em] text-white leading-tight">
-              Seu site profissional a partir de R$ 689.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-light tracking-[-0.03em] text-white leading-tight">
+              Seu site profissional a partir de {pricingPlans[0].startingPrice}.
             </h2>
           </div>
           <div className="lg:col-span-4 lg:text-right">
@@ -58,8 +58,8 @@ export function PricingSection() {
           </div>
         </div>
 
-        {/* 3 Editorial Columns (No Generic Checkmark Tables) */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 border-t border-l border-white/[0.08]">
+        {/* 2 Editorial Columns (No Generic Checkmark Tables) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-white/[0.08]">
           {pricingPlans.map((plan) => {
             const whatsappPlanUrl = contactUrl(`Olá! Tenho interesse no plano ${plan.name} da Milia Co. e gostaria de entender melhor como funciona.`);
 
@@ -78,7 +78,7 @@ export function PricingSection() {
                     </span>
                     {plan.id === "essencial" && (
                       <span className="border border-white/20 px-2 py-0.5 text-[10px] font-mono-tech text-neutral-300">
-                        Mais escolhido
+                        Para começar
                       </span>
                     )}
                   </div>
@@ -166,3 +166,4 @@ export function PricingSection() {
     </section>
   );
 }
+

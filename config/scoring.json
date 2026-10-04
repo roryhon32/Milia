@@ -1,0 +1,17 @@
+{
+  "weights": {
+    "noWebsite": 25,
+    "missingTitle": 10,
+    "missingDescription": 5,
+    "missingViewport": 15,
+    "missingCta": 10,
+    "missingForm": 5,
+    "insecureHttp": 5,
+    "activeInstagram": 10,
+    "goodReputation": 10,
+    "visualBusiness": 10,
+    "excellentWebsite": -30
+  },
+  "thresholds": { "VERY_HIGH": 85, "HIGH": 70, "MEDIUM": 55 },
+  "note": "Unknown signals do not score. Instagram activity and reputation require a human verification with a source. Technical HTML observations are not a visual/mobile audit."
+}

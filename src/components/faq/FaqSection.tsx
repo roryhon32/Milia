@@ -35,19 +35,19 @@ export function FaqSection() {
     <section
       id="faq"
       ref={containerRef}
-      className="relative py-24 lg:py-36 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
+      className="relative py-14 lg:py-20 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header Meta */}
-        <div className="flex items-center justify-between pb-8 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
+        <div className="flex items-center justify-between pb-5 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
           <span>DÚVIDAS FREQUENTES</span>
           <span>TRANSPARÊNCIA TOTAL</span>
         </div>
 
         {/* Section Headline */}
-        <div className="py-12 sm:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+        <div className="py-8 sm:py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-8">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-light tracking-[-0.03em] text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-light tracking-[-0.03em] text-white leading-tight">
               Perguntas frequentes antes de iniciar uma parceria.
             </h2>
           </div>

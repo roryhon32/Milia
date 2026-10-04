@@ -20,6 +20,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     const previousFocus = document.activeElement as HTMLElement | null;
     const previousOverflow = document.body.style.overflow;
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (document.querySelector("#contact-brief[open]")) return;
       if (e.key === "Escape") onClose();
       if (e.key !== "Tab" || !dialogRef.current) return;
       const focusable = Array.from(dialogRef.current.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
@@ -174,3 +175,4 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     </div>
   );
 }
+

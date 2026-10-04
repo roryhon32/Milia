@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/header/Navbar";
-import { Footer } from "@/components/footer/Footer";
-import { CustomCursor } from "@/components/ui/CustomCursor";
-import { WhatsAppFloating } from "@/components/ui/WhatsAppFloating";
+import { PublicShell } from "@/components/PublicShell";
 import { siteConfig } from "@/data/siteConfig";
 
 const spaceGrotesk = Space_Grotesk({
@@ -112,14 +109,11 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-[#0C0D0F] text-[#F4F4F1] antialiased selection:bg-white selection:text-black">
-        <CustomCursor />
-        <Navbar />
-        <main id="main-content" tabIndex={-1}>
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppFloating />
+
+        <PublicShell>{children}</PublicShell>
       </body>
     </html>
   );
 }
+
+

@@ -1,0 +1,13 @@
+{
+  "defaultPlan": "essencial",
+  "professionalMinPages": 2,
+  "professionalMaxPages": 6,
+  "complexRequirements": ["ecommerce", "complexIntegration", "authentication"],
+  "outreachIntervalMinutes": 30,
+  "followUpDays": 3,
+  "maxAttempts": 3,
+  "modelFast": "gpt-4.1-mini",
+  "modelReasoning": "gpt-4.1-mini",
+  "maxInputChars": 12000,
+  "maxOutputChars": 2000
+}

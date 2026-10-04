@@ -2,8 +2,9 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { ArrowUpRight, MessageSquare, Send } from "lucide-react";
-import { contactUrl, hasWhatsApp, siteConfig } from "@/data/siteConfig";
+import { ArrowUpRight, Send } from "lucide-react";
+import { hasWhatsApp, siteConfig } from "@/data/siteConfig";
+import { openContactBrief } from "@/components/ui/ContactBrief";
 import { pricingPlans } from "@/data/pricing";
 import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
@@ -39,15 +40,19 @@ export function CtaSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Olá! Vim pelo site da Milia Co. Meu nome é ${formData.name}. Tipo de projeto: ${formData.projectType}. Mensagem: ${formData.message || "Gostaria de agendar um diagnóstico."} (Contato: ${formData.emailOrPhone})`;
-    window.location.href = contactUrl(text);
+    openContactBrief({ values: {
+      name: formData.name,
+      contact: formData.emailOrPhone,
+      projectType: formData.projectType === "Automação ou Sistema" ? formData.projectType : `Plano ${formData.projectType}`,
+      objective: formData.message,
+    } });
   };
 
   return (
     <section
       id="contato"
       ref={containerRef}
-      className="relative py-28 lg:py-40 px-6 md:px-10 bg-[#0A0B0C] border-b border-white/[0.08] overflow-hidden"
+      className="relative py-14 lg:py-20 px-6 md:px-10 bg-[#0A0B0C] border-b border-white/[0.08] overflow-hidden"
     >
       {/* Background Architectural Grid */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
@@ -72,7 +77,7 @@ export function CtaSection() {
               <span>CONVERSE COM O ESTÚDIO</span>
             </div>
 
-            <h2 className="cta-element text-4xl sm:text-6xl lg:text-7xl font-heading font-light tracking-[-0.035em] text-white leading-[1.08]">
+            <h2 className="cta-element text-3xl sm:text-4xl lg:text-5xl font-heading font-light tracking-[-0.035em] text-white leading-[1.08]">
               Vamos colocar seu negócio <span className="italic font-serif font-normal text-neutral-300">no ar</span>.
             </h2>
 
@@ -182,7 +187,7 @@ export function CtaSection() {
                     type="submit"
                     className="w-full py-3 bg-white text-black font-mono-tech uppercase text-xs tracking-wider inline-flex items-center justify-center gap-2 hover:bg-neutral-200 transition-colors"
                   >
-                    <span>Preparar briefing</span>
+                    <span>Continuar com meu projeto</span>
                     <Send className="w-3.5 h-3.5" />
                   </button>
                 </form>
@@ -193,3 +198,4 @@ export function CtaSection() {
     </section>
   );
 }
+

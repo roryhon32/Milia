@@ -6,6 +6,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
 import { contactUrl, siteConfig } from "@/data/siteConfig";
+import { pricingPlans } from "@/data/pricing";
 
 export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -102,7 +103,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[92vh] lg:min-h-screen flex flex-col justify-between pt-32 pb-12 px-6 md:px-10 overflow-hidden bg-[#0C0D0F] border-b border-white/[0.08]"
+      className="relative min-h-[660px] lg:min-h-[720px] flex flex-col justify-between pt-32 pb-12 px-6 md:px-10 overflow-hidden bg-[#0C0D0F] border-b border-white/[0.08]"
     >
       {/* Background Architectural Grid Lines */}
       <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
@@ -131,27 +132,27 @@ export function HeroSection() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-white" />
           </span>
           <span className="text-[11px] font-mono-tech tracking-wider uppercase text-neutral-300">
-            Estúdio Digital Independente • Projetos Selecionados
+            Milia Co. • Sites para empresas
           </span>
         </div>
       </div>
 
       {/* Main Content Area */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full my-auto py-10 lg:py-16">
+      <div className="relative z-10 max-w-7xl mx-auto w-full my-auto py-8 lg:py-10">
         <div className="max-w-5xl">
           {/* Main Headline with Mask Clip Reveal */}
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem] font-heading font-light tracking-[-0.035em] text-white leading-[1.06]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-heading font-light tracking-[-0.035em] text-white leading-[1.06]">
             <span className="block overflow-hidden pb-1">
-              <span className="hero-line block">Sites que transformam</span>
+              <span className="hero-line block">Seu próximo cliente</span>
             </span>
             <span className="block overflow-hidden pb-1">
               <span className="hero-line block">
-                presença digital em
+                precisa encontrar
               </span>
             </span>
             <span className="block overflow-hidden pb-1">
               <span className="hero-line block">
-                <span className="italic font-serif font-normal text-white underline decoration-white/30 underline-offset-8">oportunidades</span>.
+                <span className="italic font-serif font-normal text-white underline decoration-white/30 underline-offset-8">sua empresa</span>.
               </span>
             </span>
           </h1>
@@ -166,12 +167,12 @@ export function HeroSection() {
           {/* Action CTAs */}
           <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-6">
             <a
-              href={contactUrl()}
+              href={contactUrl("Olá! Quero uma proposta para o site da minha empresa. Meu objetivo é gerar mais contatos.")}
               target="_blank"
               rel="noopener noreferrer"
               className="hero-cta group relative inline-flex items-center gap-3 px-7 py-4 bg-white text-black font-mono-tech uppercase text-xs tracking-wider transition-all duration-300 hover:bg-neutral-200"
             >
-              <span>Quero meu site</span>
+              <span>Solicitar proposta</span>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
 
@@ -186,16 +187,17 @@ export function HeroSection() {
         </div>
       </div>
 
+      <p className="hero-sub relative z-10 max-w-7xl mx-auto w-full mb-6 text-sm text-neutral-400">Design para celular, contato pelo WhatsApp e proposta com escopo definido. <a href="#planos" className="underline underline-offset-4 text-white">Compare os planos →</a></p>
       {/* Bottom Technical Bar & Minimalist Scroll Indicator */}
       <div className="relative z-10 max-w-7xl mx-auto w-full pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono-tech text-neutral-500">
         <div className="flex items-center gap-6">
-          <span>01 / 07 — INTRO</span>
+          <span>Sites a partir de {pricingPlans[0].startingPrice}</span>
           <span className="hidden md:inline text-neutral-600">•</span>
-          <span className="hidden md:inline">ENGENHARIA & DESIGN INDEPENDENTE</span>
+          <span className="hidden md:inline">DESIGN • SEO • WHATSAPP</span>
         </div>
 
         <a
-          href="#proposta-de-valor"
+          href="#servicos"
           className="group inline-flex items-center gap-2 text-neutral-400 hover:text-white transition-colors"
         >
           <span className="tracking-widest uppercase text-[11px]">Rolar para explorar</span>
@@ -205,3 +207,4 @@ export function HeroSection() {
     </section>
   );
 }
+

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="solarGrad" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a3325" />
+      <stop offset="100%" stop-color="#062319" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="20" y1="12" x2="44" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Squircle Base -->
+  <rect width="64" height="64" rx="16" fill="url(#solarGrad)" />
+
+  <!-- Modern Sun Ring & Ray Arc -->
+  <circle cx="32" cy="22" r="9" fill="url(#amberGrad)" />
+  <path d="M32 6V9M46 11L43.8 13.2M18 11L20.2 13.2" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Geometric Solar Panel Facets (Perspective / Hex-Grid) -->
+  <g stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round" opacity="0.95">
+    <!-- Panel Left -->
+    <path d="M14 48L24 33L31 33L21 48H14Z" fill="#14532d" />
+    <!-- Panel Center -->
+    <path d="M23 48L32 33L41 33L32 48H23Z" fill="#166534" />
+    <!-- Panel Right -->
+    <path d="M34 48L43 33L50 33L41 48H34Z" fill="#14532d" />
+  </g>
+
+  <!-- Horizontal Grid Gridline across panels -->
+  <path d="M17.5 40.5H46.5" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+</svg>

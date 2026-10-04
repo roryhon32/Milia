@@ -14,6 +14,7 @@ export interface Project {
   aspectRatio: string;
   theme: "light" | "dark";
   previewUrl?: string;
+  imageSrc?: string;
   proof?: {
     clientName: string;
     clientLogoSrc?: string;

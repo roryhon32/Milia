@@ -35,12 +35,12 @@ export function ProcessSection() {
     <section
       id="processo"
       ref={containerRef}
-      className="relative py-24 lg:py-36 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
+      className="relative py-14 lg:py-20 px-6 md:px-10 bg-[#0C0D0F] border-b border-white/[0.08]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header Meta */}
-        <div className="flex items-center justify-between pb-8 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
-          <span>06 / 07 — METODOLOGIA & PROCESSO</span>
+        <div className="flex items-center justify-between pb-5 border-b border-white/[0.08] text-xs font-mono-tech text-neutral-400">
+          <span>DO PRIMEIRO CONTATO À PUBLICAÇÃO</span>
           <span>FLUXO LINEAR SEM ATRITO</span>
         </div>
 
@@ -126,3 +126,4 @@ export function ProcessSection() {
     </section>
   );
 }
+

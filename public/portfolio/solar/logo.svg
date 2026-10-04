@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="logoBgGrad" x1="10" y1="10" x2="70" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a3325" />
+      <stop offset="100%" stop-color="#062319" />
+    </linearGradient>
+    <linearGradient id="logoAmberGrad" x1="26" y1="18" x2="54" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Symbol Icon Box (60x60) -->
+  <g transform="translate(10, 10)">
+    <rect width="60" height="60" rx="15" fill="url(#logoBgGrad)" />
+
+    <!-- Sun rays & core -->
+    <circle cx="30" cy="21" r="8.5" fill="url(#logoAmberGrad)" />
+    <path d="M30 6V9M43 11L41 13M17 11L19 13" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round" />
+
+    <!-- Isometric Photovoltaic Panel Grids -->
+    <g stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M13 45L22.5 31L29 31L19.5 45H13Z" fill="#14532d" opacity="0.95" />
+      <path d="M21.5 45L30 31L38.5 31L30 45H21.5Z" fill="#166534" />
+      <path d="M32 45L41.5 31L48 31L39.5 45H32Z" fill="#14532d" opacity="0.95" />
+    </g>
+
+    <!-- Transversal grid wire line -->
+    <path d="M16.5 38H44.5" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(86, 20)">
+    <!-- SOLAR POWER -->
+    <text x="0" y="24" fill="#0f172a" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">
+      SOLAR POWER
+    </text>
+    <!-- ENERGY -->
+    <text x="1" y="41" fill="#0f4c37" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="4.5">
+      ENERGY
+    </text>
+  </g>
+</svg>
